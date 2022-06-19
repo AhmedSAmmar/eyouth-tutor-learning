@@ -10,6 +10,37 @@
   flex-direction: column;
   min-height: 100vh;
 
+  .bg-primary {
+    background-color: #2475fe !important;
+  }
+
+  a {
+    color: #4054B2;
+  }
+
+  .instructor-toolbar-a {
+    color: white;
+  }
+
+  .instructor-toolbar-a:hover {
+    color: black;
+  }
+
+  .text-primary,
+  .text-primary-500 {
+    color: #4054B2 !important;
+  }
+
+  .btn-brand {
+    color: #fff;
+    background-color: #2475fe;
+    border-color: #2475fe;
+  }
+
+  .btn-link {
+    color: #4054B2;
+  }
+
   main {
     flex-grow: 1;
   }
@@ -24,6 +55,7 @@
       top: 0.1em;
       height: 1.75rem;
       margin-right: 1rem;
+
       img {
         display: block;
         height: 100%;
@@ -185,7 +217,7 @@
       justify-content: flex-start;
       border-right: 0;
 
-      & + .btn {
+      &+.btn {
         border-top: 0;
       }
 
@@ -228,7 +260,7 @@
 
   .previous-btn,
   .next-btn {
-    border: 1px solid $light-400 !important;
+    border: 1px solid $light-400  !important;
     color: $gray-700;
     display: inline-flex;
     justify-content: center;
@@ -328,7 +360,7 @@
   // I don't like this.  We need to set a height of 100% on a div created by react-focus-on, a
   // package we use in our Modal.  That div has no class name or ID, so instead we're uniquely
   // identifying it by based on a unique attribute it has which its siblings don't share.
-  > div[data-focus-lock-disabled="false"] {
+  >div[data-focus-lock-disabled="false"] {
     height: 100%;
   }
 
@@ -350,6 +382,7 @@
   &.grades {
     overflow: hidden;
     max-height: 852px;
+
     @media screen and (min-width: 992px) {
       max-height: 920px;
     }

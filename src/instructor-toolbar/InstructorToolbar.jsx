@@ -89,17 +89,17 @@ export default function InstructorToolbar(props) {
           )}
           {urlLegacy && (
             <span className="mx-1 my-1">
-              <a className="btn btn-inverse-outline-primary" href={urlLegacy}>Legacy experience</a>
+              <a className="btn btn-inverse-outline-primary instructor-toolbar-a" href={urlLegacy}>Legacy experience</a>
             </span>
           )}
           {urlStudio && (
             <span className="mx-1 my-1">
-              <a className="btn btn-inverse-outline-primary" href={urlStudio}>Studio</a>
+              <a className="btn btn-inverse-outline-primary instructor-toolbar-a" href={urlStudio}>Studio</a>
             </span>
           )}
           {urlInsights && (
             <span className="mx-1 my-1">
-              <a className="btn btn-inverse-outline-primary" href={urlInsights}>Insights</a>
+              <a className="btn btn-inverse-outline-primary instructor-toolbar-a" href={urlInsights}>Insights</a>
             </span>
           )}
         </div>
